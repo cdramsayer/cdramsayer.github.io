@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Forum');
+@import url('https://fonts.googleapis.com/css?family=Philosopher');
+
+html {
+    background-color: grey;
+    width: 100%;
+    font-family: "Philosopher"
+}
+
+body {
+    background-color: white;
+    width: 95%;
+    border: solid black;
+    border-width: 5px;
+    margin: auto;
+}
+
+.header {
+    grid-area: hd;
+    background-color: white;
+    color: #DA2127;
+}
+
+.nav {
+    grid-area: nv;
+    background-color: white;
+    border-top: solid black 2px;
+    font-family: "Forum";
+    font-weight: bold;
+}
+
+.main {
+    grid-area: mn;
+    background-color: white;
+    padding: 10px;
+    min-height: 500px;
+    border-top: solid black 2px;
+}
+
+.footer {
+    grid-area: ft;
+    border-top: solid black 2px;
+    background-color: white;
+    text-align: center;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    grid-template-areas: 
+        "hd"
+        "nv"
+        "mn"
+        "ft";
+}
+
+.football {
+    align-content: center;
+    display: block;
+    margin-top: 15px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+h1{
+    font-size: 50px;
+    text-align: center;
+    color: black;
+    font-family: "Forum";
+    font-weight: bolder;
+}
+
+h2{
+    font-size: 30px;
+    text-align: center;
+    padding: 0px;
+    margin: 10px;
+    color: #DA2127;
+    font-family: "Forum";
+    font-weight: bolder;
+}
+
+h3{
+    font-size: 25px;
+    text-align: center;
+    padding: 0px;
+    margin: 10px;
+    color: #DA2127;
+    font-family: "Forum";
+    font-weight: bolder;
+}
+
+table{
+    border: 1px solid black;
+    border-spacing: 2px;
+    border-collapse: separate;
+    width: 100%;
+}
+
+td {
+    border: 1px solid black;
+    border-spacing: 2px;
+    border-collapse: separate;
+    padding: 2px;
+}
+
+.navbar {
+    background-color: #003A73;
+    overflow: hidden;
+    width: 100%;
+}
+
+.navbar a {
+    width: 50%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    float: left;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.navbar a:hover {
+    background-color: black;
+    color: white;
+}
+
+.navbar a.active {
+    background-color: white;
+    color: black;
+}
+
+@media screen and (min-width: 500px) {
+
+    .navbar a {
+        width: 16.66666%;
+    }
+
+}
+
+@media screen and (min-width: 1010px) {
+
+    body {
+        width: 1000px;
+        border: solid black;
+        margin: auto;
+        border-width: 5px;
+    }
+
+}
